@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "919029913742",
+    "firebase_url": "https://yenkor-app.firebaseio.com",
+    "project_id": "yenkor-app",
+    "storage_bucket": "yenkor-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:919029913742:android:92cd084f6d94bcf7",
+        "android_client_info": {
+          "package_name": "com.kodekid.deliveryapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "919029913742-5vhdlgchsb37sgkl5tu3t7nk9gcl4sqg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCklUv0WSAxHdl1XMYITy00cny8TEmbUHQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "919029913742-5vhdlgchsb37sgkl5tu3t7nk9gcl4sqg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

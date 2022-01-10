@@ -1,0 +1,96 @@
+<?xml version='1.1' encoding='utf-8'?>
+<widget id="com.kodekid.deliveryapp" versionCode="30010" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" xmlns:android = "http://schemas.android.com/apk/res/android">
+    <name>YENKOR APP</name>
+    <description>
+        Rapid Delivery Services
+    </description>
+    <author email="support@phonegap.com" href="http://phonegap.com">
+        NII VAN
+    </author>
+    <!-- Core plugins -->
+    <content src="index.html" />
+
+	 <preference name="phonegap-version" value="cli-9.0.0" />
+	 <preference name="orientation" value="portrait" />      
+	 <preference name="target-device"       value="universal" />
+	 <preference name="fullscreen"          value="false" />    
+	 <preference name="webviewbounce"       value="true" />          
+	 <preference name="prerendered-icon"    value="true" />
+	 <preference name="stay-in-webview"     value="false" />  
+	 <preference name="ios-statusbarstyle"  value="black-opaque" />
+	 <preference name="detect-data-types"   value="true" />           
+	 <preference name="exit-on-suspend"     value="false" />
+	 <preference name="show-splash-screen-spinner" value="true" />
+	 <preference name="auto-hide-splash-screen"    value="true" />
+	 <preference name="disable-cursor"             value="false" />
+	 <preference name="android-installLocation"    value="auto" /> 
+	 <preference name="android-build-tool" value="gradle" /> 
+	 <preference name="android-minSdkVersion" value="19" />
+	 <preference name="android-targetSdkVersion" value="28" />
+
+	 
+	 
+	<plugin spec="https://github.com/LuisEGR/cordova-support-google-services.git"/> 
+	
+    <plugin name="cordova-plugin-console" source="npm" spec="~1.0.2" />
+    <plugin name="cordova-plugin-device" source="npm" spec="~1.1.1" />
+    <plugin name="cordova-plugin-device-motion" source="npm" spec="~1.2.0" />
+    <plugin name="cordova-plugin-dialogs" source="npm" spec="~1.2.0" />
+    <plugin name="cordova-plugin-inappbrowser" source="npm" spec="~1.3.0" />
+    <plugin name="cordova-plugin-network-information" source="npm" spec="~1.2.0" />
+    <plugin name="cordova.plugins.diagnostic" source="npm" />
+    <plugin name="org.apache.cordova.geolocation" source="npm" />
+	<plugin spec="https://github.com/jbeuckm/cordova-plugin-geocoder.git" source="git" />
+	<plugin spec="https://github.com/Eusebius1920/cordova-geocoder.git" source="git" />
+	<gap:plugin name="cordova-plugin-uniquedeviceid" source="npm" />
+	<plugin spec="https://github.com/phonegap/phonegap-plugin-push.git" source="git" />
+    
+	
+	 <plugin name="cordova-plugin-admobpro" version="2.29.24" source="npm" />
+	<gap:plugin name="onesignal-cordova-plugin" spec="2.3.3" source="npm" />
+	
+	<gap:config-file platform="android" parent="/manifest">
+    <supports-screens android:xlargeScreens="true" android:largeScreens="true" android:normalScreens="true"  android:smallScreens="true" />
+	<uses-sdk android:minSdkVersion="19" android:targetSdkVersion="28" />
+	<uses-permission android:name="android.permission.GET_ACCOUNTS" />
+	<uses-permission android:name="android.permission.CALL_PHONE" />
+	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+	<uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+	</gap:config-file>
+	<gap:plugin name="cordova-plugin-whitelist" source="npm" />
+
+	<platform name="android">
+	  <resource-file src="google-services.json" target="app/google-services.json" />
+	</platform>
+
+	<access origin="*" />
+	<allow-navigation href="http://*/*" />
+	<allow-intent href="https://*/*" />
+	<allow-intent href="http://*/*" />
+	<access origin="*://*.googleapis.com/*" subdomains="true" />
+<access origin="*://*.gstatic.com/*" subdomains="true" />
+<access origin="*://*.google.com/*" subdomains="true" />
+<access origin="*://*.googleusercontent.com/*" subdomains="true" />
+
+<platform name="android">
+
+    <plugin spec="https://github.com/katzer/cordova-plugin-email-composer.git#0.8.2" source="git" />
+	<plugin spec="https://github.com/Rohfosho/CordovaCallNumberPlugin.git" source="git" />
+	<plugin spec="https://github.com/phonegap/phonegap-mobile-accessibility.git" source="git" />
+	
+	
+
+</platform>
+<feature name="Media">
+    <param name="android-package" value="org.apache.cordova.media.AudioHandler" />
+</feature>
+
+   	
+
+	
+</widget>

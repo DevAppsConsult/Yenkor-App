@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>Blank Template for Bootstrap</title>
+        <!-- Bootstrap core CSS -->
+        <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+        <!-- Custom styles for this template -->
+        <link href="style.css" rel="stylesheet">
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+        <link rel="stylesheet" href="CssCheckboxKit/style.css">
+        <style>
+            .group 			  { 
+            position:relative; 
+            margin-bottom:17px; 
+            }
+            input 				{
+            font-size:18px;
+            padding:10px 10px 10px 5px;
+            display:block;
+            width:100%;
+            border:none;
+            border-bottom:1px solid #757575;
+            }
+            input:focus 		{ outline:none;border-bottom:2px solid orange; }
+            /* LABEL ======================================= */
+            label 				 {
+            color:#999; 
+            font-size:14px;
+            font-weight:normal;
+            position:absolute;
+            pointer-events:none;
+            left:5px;
+            top:10px;
+            transition:0.2s ease all; 
+            -moz-transition:0.2s ease all; 
+            -webkit-transition:0.2s ease all;
+            }
+            /* active state */
+            input:focus ~ label, input:valid ~ label 		{
+            top:-10px;
+            font-size:14px;
+            color:red;
+            }   
+
+</style>
+    </head>
+    <body>
+        <div style="height:50px;width:100%;box-shadow: 0 1px 5px rgba(0,0,0,0.16), 0 1px 5px rgba(0,0,0,0.23);background-color:#F7F7F8">
+            <a href="index.html"><p style="padding:15px;font-weight:bold;color:black"><i class="fa fa-arrow-left"></i> BACK</p></a>
+        </div>
+        <!-- Bootstrap core JavaScript
+    ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <div class="container" style="margin-top:15px;">
+            <div class="row">
+                <div class="col-md-12">
+                    <div style="width:95%;margin:0 auto">
+                        <form>
+                            <div class="group"> 
+                                <input type="text" required id="pickup" disabled="disabled">
+                                <span class="highlight"></span>
+                                <span class="bar"></span>
+                            </div>
+                            <div class="group"> 
+                                <input type="text" required id="destination" disabled="disabled">
+                                <span class="highlight"></span>
+                                <span class="bar"></span>
+                                <label class="hidden-xs hidden-sm hidden-md hidden-lg">Destination</label>
+                            </div>
+                            <div class="group"> 
+                                <input type="text" required id="User_Name">
+                                <span class="highlight"></span>
+                                <span class="bar"></span>
+                                <label>Your Name</label>
+                            </div>
+                            <div class="group"> 
+                                <input type="number" required id="User_Phone">
+                                <span class="highlight"></span>
+                                <span class="bar"></span>
+                                <label>Your Phone No.</label>
+                            </div>
+                            <div class="group"> 
+                                <input type="text" required id="Reciever_Name">
+                                <span class="highlight"></span>
+                                <span class="bar"></span>
+                                <label>Receiver's Name</label>
+                            </div>
+                            <div class="group"> 
+                                <input type="number" required id="Reciever_phone">
+                                <span class="highlight"></span>
+                                <span class="bar"></span>
+                                <label>Receiver's Phone No.</label>
+                            </div>
+                            <div style="width:100%;height:90px;">
+                                <div class="container" style="font-weight:bold">
+                                    <div class="row">
+                                        <div class="col-md-6 col-xs-12">
+                                            <div class="text-left" style="float:left;width:50%">
+                                                <img src="img/road.png" style="float:left" />
+                                                <p style="float:left" id="distance">: 10 Km</p>
+                                            </div>
+                                            <div class="text-left" style="float:left;width:50%">
+                                                <img src="img/ghana-cedis.png" style="float:left" />
+                                                <p style="float:left;padding-left:2px" id="cost">: 10 GHS</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-xs-12">
+                                            <h6>Payment by:</h6>
+                                            <div class="row">
+                                                <div class="col-xs-6">
+                                                    <div class="text-left" style="float:left;width:50%">
+                                                        <input type="radio" name="radiog_dark" id="radio4" class="css-checkbox" />
+                                                        <label for="radio4" class="css-label radGroup2">Sender</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-6">
+                                                    <div class="text-left" style="float:left;width:50%">
+                                                        <input type="radio" name="radiog_dark" id="radio5" class="css-checkbox" checked="checked" />
+                                                        <label for="radio5" class="css-label radGroup2">Reciever</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button id="requested" type="submit" class="btn btn-block" style="background-color:black;color:white;border:2px solid white;border-top-left-radius:50px;border-bottom-left-radius:50px;border-top-right-radius:50px;border-bottom-right-radius:50px">Request Pickup</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+        <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+        <script>
+           var info =  JSON.parse(localStorage.getItem("request"));
+           var pickup = info[0];
+           var destination = info[1];
+           var distance = info[2];
+           var courier = info[3];
+           var cost = info[4];
+           var imei = info[5];
+           var courier_id = info[6];
+          
+           $("#pickup").val(pickup);
+           $("#destination").val(destination);
+           $("#distance").text(" : "+ distance + " KM");
+           $("#cost").text(" : "+ cost + " GHS");
+
+           function requests(){
+           var sender_name = $("#User_Name").val();
+           var sender_phone = $("#User_Phone").val();
+           var Reciever_Name = $("#Reciever_Name").val();
+           var Reciever_phone = $("#Reciever_phone").val();
+           $.ajax({
+                type:"POST",
+                url:"http://cosmicpictures.co.uk/port/request.php",
+                data:{pickup:pickup,destination:destination,courier_name:courier,cost:cost,sender_name:sender_name,sender_phone:sender_phone,Reciever_Name:Reciever_Name,Reciever_phone:Reciever_phone,imei:imei,courier_id:courier_id},
+                success:function(data){
+                    console.log(data);
+                    location.href = "successful_order.html";
+                },timeout: 10000,
+                error:function(data){
+                    alert("make sure you are connected to the internet");
+                    console.log(data);
+                    document.addEventListener("deviceready", onDeviceReady, false);
+                    function onDeviceReady() {
+                        navigator.notification.alert(
+                            'You are the winner!',  // message
+                            alertDismissed,         // callback
+                            'Game Over',            // title
+                            'Done'                  // buttonName
+                        );
+                    }
+                    function alertDismissed() {
+                        // do something
+                    }
+                }
+            });
+           return false;
+           }
+           
+           $("#requested").on("click",function(){
+            requests();
+            return false;
+           })
+        </script>
+    </body>
+</html>
